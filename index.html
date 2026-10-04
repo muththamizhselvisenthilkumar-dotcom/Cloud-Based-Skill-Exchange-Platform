@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cloud-Based Skill Exchange Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+        ☁️ SkillCloud
+    </div>
+
+    <div class="header-title">
+        Cloud-Based Skill Exchange Platform
+    </div>
+
+</header>
+
+
+<!-- MAIN -->
+
+<main class="container">
+
+
+    <!-- WELCOME -->
+
+    <section class="welcome">
+
+        <div>
+
+            <h1>
+                Welcome to SkillCloud 👋
+            </h1>
+
+            <p>
+                Share your skills, learn new skills and connect
+                with other students.
+            </p>
+
+        </div>
+
+
+        <div class="cloud-status">
+
+            ☁️ Cloud Status
+
+            <span>
+                ● Online
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- STATISTICS -->
+
+    <section class="stats">
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                👥
+            </div>
+
+            <div>
+
+                <h2 id="totalMembers">
+                    0
+                </h2>
+
+                <p>
+                    Skill Members
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                💡
+            </div>
+
+            <div>
+
+                <h2 id="totalSkills">
+                    0
+                </h2>
+
+                <p>
+                    Skills Available
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🔄
+            </div>
+
+            <div>
+
+                <h2 id="exchangeCount">
+                    0
+                </h2>
+
+                <p>
+                    Exchanges
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ⭐
+            </div>
+
+            <div>
+
+                <h2 id="learningCount">
+                    0
+                </h2>
+
+                <p>
+                    Learning Skills
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ADD SKILL -->
+
+    <section class="skill-form">
+
+        <h2>
+            ➕ Add Your Skill
+        </h2>
+
+
+        <div class="form-grid">
+
+
+            <div class="input-group">
+
+                <label>
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name">
+
+            </div>
+
+
+
+            <div class="input-group">
+
+                <label>
+                    Skill You Can Teach
+                </label>
+
+                <input
+                    type="text"
+                    id="teachSkill"
+                    placeholder="Example: Python">
+
+            </div>
+
+
+
+            <div class="input-group">
+
+                <label>
+                    Skill You Want to Learn
+                </label>
+
+                <input
+                    type="text"
+                    id="learnSkill"
+                    placeholder="Example: UI/UX">
+
+            </div>
+
+
+
+            <div class="input-group">
+
+                <label>
+                    Skill Level
+                </label>
+
+                <select id="level">
+
+                    <option value="Beginner">
+                        Beginner
+                    </option>
+
+                    <option value="Intermediate"
+                            selected>
+                        Intermediate
+                    </option>
+
+                    <option value="Advanced">
+                        Advanced
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="input-group">
+
+            <label>
+                Short Description
+            </label>
+
+            <textarea
+                id="description"
+                placeholder="Tell others about your skill..."
+            ></textarea>
+
+        </div>
+
+
+        <button
+            class="add-btn"
+            onclick="addSkill()">
+
+            + Add Skill
+
+        </button>
+
+    </section>
+
+
+
+    <!-- SKILL SEARCH -->
+
+    <section class="skills-section">
+
+
+        <div class="section-header">
+
+            <h2>
+                💡 Available Skills
+            </h2>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="🔍 Search skills..."
+                onkeyup="displaySkills()">
+
+        </div>
+
+
+        <div
+            id="skillList"
+            class="skill-grid">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- EXCHANGE REQUEST -->
+
+    <section class="exchange-section">
+
+        <h2>
+            🔄 Skill Exchange Requests
+        </h2>
+
+
+        <div id="exchangeList">
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>
+        ☁️ SkillCloud
+    </h3>
+
+    <p>
+        Cloud-Based Skill Exchange Platform
+    </p>
+
+    <p>
+        Learn • Share • Connect
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
